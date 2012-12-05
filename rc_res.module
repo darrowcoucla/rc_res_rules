@@ -56,7 +56,7 @@ function rc_res_entry_delete($entry) {
 function rc_res_entry_load($entry = array()) {
   // Read all fields from the rc_res table.
   $select = db_select('rc_res', 'example');
-  $select->condition('user_group', 'Graduate');
+//  $select->condition('user_group', 'Graduate');
   $select->fields('example');
 
   // Add each field and value as a condition to this query.
