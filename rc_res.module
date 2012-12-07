@@ -229,14 +229,12 @@ function rc_res_form_add($form, &$form_state) {
   $form['add']['gsr_lim'] = array(
     '#type'  => 'textfield',
     '#title' => t('Time Limit (hours) Group Study Room'),
-    '#size'  => 5,
-    '#description' => t("Values greater than 127 will cause an exception."),
+    '#size'  => 15,
   );
   $form['add']['pod_lim'] = array(
     '#type'  => 'textfield',
     '#title' => t('Time Limit (hours) POD'),
-    '#size'  => 5,
-    '#description' => t("Values greater than 127 will cause an exception."),
+    '#size'  => 15,
   );
   $form['add']['cls_adv'] = array(
     '#type'  => 'textfield',
@@ -246,14 +244,12 @@ function rc_res_form_add($form, &$form_state) {
   $form['add']['gsr_adv'] = array(
     '#type'  => 'textfield',
     '#title' => t('Advance Limit (days) Group Study Room'),
-    '#size'  => 5,
-    '#description' => t("Values greater than 127 will cause an exception."),
+    '#size'  => 15,
   );
   $form['add']['pod_adv'] = array(
     '#type'  => 'textfield',
     '#title' => t('Advance Limit (days) POD'),
-    '#size'  => 5,
-    '#description' => t("Values greater than 127 will cause an exception."),
+    '#size'  => 15,
   );
   $form['add']['multi_res'] = array(
     '#type'  => 'textfield',
@@ -263,20 +259,17 @@ function rc_res_form_add($form, &$form_state) {
   $form['add']['time_per'] = array(
     '#type'  => 'textfield',
     '#title' => t('limit per time period'),
-    '#size'  => 5,
-    '#description' => t("Values greater than 127 will cause an exception."),
+    '#size'  => 15,
   );
   $form['add']['time_unit'] = array(
     '#type'  => 'textfield',
     '#title' => t('unit for time period'),
-    '#size'  => 5,
-    '#description' => t("Values greater than 127 will cause an exception."),
+    '#size'  => 15,
   );
   $form['add']['group_verify'] = array(
     '#type'  => 'textfield',
     '#title' => t('verify group'),
-    '#size'  => 5,
-    '#description' => t("Values greater than 127 will cause an exception."),
+    '#size'  => 15,
   );
   $form['add']['submit'] = array(
     '#type'  => 'submit',
@@ -372,14 +365,12 @@ function rc_res_form_update($form, &$form_state) {
     '#title' => t('Updated gsr_lim'),
     '#size' => 15,
     '#default_value' => $default_entry->gsr_lim,
-    '#description' => t("Values greater than 127 will cause an exception"),
   );
   $form['pod_lim'] = array(
     '#type' => 'textfield',
     '#title' => t('Updated pod_lim'),
-    '#size' => 4,
+    '#size' => 15,
     '#default_value' => $default_entry->pod_lim,
-    '#description' => t("Values greater than 127 will cause an exception"),
   );
 
   $form['cls_adv'] = array(
@@ -391,44 +382,38 @@ function rc_res_form_update($form, &$form_state) {
   $form['gsr_adv'] = array(
     '#type' => 'textfield',
     '#title' => t('Updated gsr_adv'),
-    '#size' => 4,
+    '#size' => 15,
     '#default_value' => $default_entry->gsr_adv,
-    '#description' => t("Values greater than 127 will cause an exception"),
   );
   $form['pod_adv'] = array(
     '#type' => 'textfield',
     '#title' => t('Updated pod_adv'),
-    '#size' => 4,
+    '#size' => 15,
     '#default_value' => $default_entry->pod_adv,
-    '#description' => t("Values greater than 127 will cause an exception"),
   );
   $form['multi_res'] = array(
     '#type' => 'textfield',
     '#title' => t('Updated multi_res'),
-    '#size' => 4,
+    '#size' => 15,
     '#default_value' => $default_entry->multi_res,
-    '#description' => t("Values greater than 127 will cause an exception"),
   );
   $form['time_per'] = array(
     '#type' => 'textfield',
     '#title' => t('Updated time_per'),
-    '#size' => 4,
+    '#size' => 15,
     '#default_value' => $default_entry->time_per,
-    '#description' => t("Values greater than 127 will cause an exception"),
   );
   $form['time_unit'] = array(
     '#type' => 'textfield',
     '#title' => t('Updated time_unit'),
-    '#size' => 4,
+    '#size' => 15,
     '#default_value' => $default_entry->time_unit,
-    '#description' => t("Values greater than 127 will cause an exception"),
   );
   $form['group_verify'] = array(
     '#type' => 'textfield',
     '#title' => t('verify group'),
-    '#size' => 4,
+    '#size' => 15,
     '#default_value' => $default_entry->group_verify,
-    '#description' => t("Values greater than 127 will cause an exception"),
   );
 
   $form['submit'] = array(
