@@ -116,14 +116,12 @@ function rc_res_schema() {
         'type' => 'int',
         'not null' => TRUE,
         'default' => 0,
-        'size' => 'tiny',
         'description' => 'Group Study Room limit.',
       ),
       'pod_lim' => array(
         'type' => 'int',
         'not null' => TRUE,
         'default' => 0,
-        'size' => 'tiny',
         'description' => 'POD Limit.',
       ),
       'cls_adv' => array(
@@ -136,14 +134,12 @@ function rc_res_schema() {
         'type' => 'int',
         'not null' => TRUE,
         'default' => 0,
-        'size' => 'tiny',
         'description' => 'Group Study Room advance.',
       ),
       'pod_adv' => array(
         'type' => 'int',
         'not null' => TRUE,
         'default' => 0,
-        'size' => 'tiny',
         'description' => 'POD advance.',
       ),
       'multi_res' => array(
@@ -157,7 +153,6 @@ function rc_res_schema() {
         'type' => 'int',
         'not null' => TRUE,
         'default' => 0,
-        'size' => 'tiny',
         'description' => 'Limit per time period.',
       ),
       'time_unit' => array(
